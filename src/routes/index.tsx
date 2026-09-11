@@ -19,8 +19,9 @@ const skills = [
   ["Python", 92], ["Data Analysis (Pandas, NumPy)", 88],
   ["Streamlit", 85], ["Data Visualization (Matplotlib)", 82],
   ["Flutter & Dart", 80], ["Scikit-learn", 78], ["Firebase / Firestore", 76],
+  ["Supabase", 74],
 ] as const;
-const tools = ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "Streamlit", "Flutter", "Dart", "Firebase", "Firestore", "Java", "C", "Jupyter Notebook", "Google Colab", "Android Studio", "VS Code"];
+const tools = ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "Streamlit", "Flutter", "Dart", "Firebase", "Firestore", "Supabase", "Java", "C", "Jupyter Notebook", "Google Colab", "Android Studio", "VS Code"];
 const projects = [
   { n:"01", title:"My Digital CV and Portfolio", body:"A deployed personal portfolio with a clean, modern interface showcasing professional skills, projects, and achievements.", tags:["Python","Streamlit"], href:"https://ahmer-ali-ahmerali-portfolio.hf.space" },
   { n:"02", title:"Student Performance Predictor", body:"An AI-powered web app using multiple machine-learning algorithms to predict academic performance and support educational improvement.", tags:["Python","Streamlit","Scikit-learn"], href:"https://ahmer-ali-datascience.hf.space" },
@@ -62,7 +63,7 @@ function Portfolio() {
 
    <section id="skills" className="content-section tinted"><div className="wide-wrap"><p className="section-label">SKILLS</p><h2>One stack, <span>full range</span></h2><div className="skills-grid">
     <div className="skill-list">{skills.map(([name,p])=><div className="skill" key={name}><div><span>{name}</span><b>{p}%</b></div><div className="track"><i style={{width:`${p}%`}}/></div></div>)}</div>
-    <div className="toolbox"><p>My toolkit spans Python data workflows, machine learning, Streamlit applications, and cross-platform Flutter development, supported by modern teaching and development tools.</p><div className="tags">{tools.map(t=><span key={t}>{t}</span>)}</div></div>
+     <div className="toolbox"><p>My toolkit spans Python data workflows, machine learning, Streamlit applications, cross-platform Flutter development, and cloud-backed products with Supabase.</p><div className="tags">{tools.map(t=><span key={t}>{t}</span>)}</div></div>
    </div></div></section>
 
    <section id="projects" className="content-section"><div className="wide-wrap"><p className="section-label">PROJECTS</p><h2>Selected <span>work</span></h2><div className="project-grid">{projects.map(p=><a className="project-card" key={p.n} href={p.href} target="_blank" rel="noreferrer"><div className="project-top"><span>{p.n}</span><ArrowUpRight/></div><h3>{p.title}</h3><p>{p.body}</p><div className="tags">{p.tags.map(t=><span key={t}>{t}</span>)}</div></a>)}</div></div></section>
