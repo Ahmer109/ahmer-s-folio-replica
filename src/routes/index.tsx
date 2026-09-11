@@ -19,7 +19,7 @@ const skills = [
   ["Python", 92], ["Data Analysis (Pandas, NumPy)", 88],
   ["Streamlit", 85], ["Data Visualization (Matplotlib)", 82],
   ["Flutter & Dart", 80], ["Scikit-learn", 78], ["Firebase / Firestore", 76],
-  ["Supabase", 74],
+  ["Supabase", 55],
 ] as const;
 const tools = ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "Streamlit", "Flutter", "Dart", "Firebase", "Firestore", "Supabase", "Java", "C", "Jupyter Notebook", "Google Colab", "Android Studio", "VS Code"];
 const projects = [
