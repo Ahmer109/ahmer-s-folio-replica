@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { ArrowUpRight, CheckCircle2, Github, Linkedin, Mail, Menu, X } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Github, Linkedin, Mail, Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
@@ -69,7 +69,7 @@ function Portfolio() {
 
    <section id="experience" className="content-section tinted"><div className="wide-wrap"><p className="section-label">EXPERIENCE</p><h2>Where I've <span>built</span></h2><div className="timeline">{experience.map((e,i)=><article className="job" key={e.year}><div className="dot">{i+1}</div><p className="job-year">{e.year}</p><div><h3>{e.role}</h3><p className="company">{e.company}</p><ul>{e.points.map(x=><li key={x}>{x}</li>)}</ul></div></article>)}</div></div></section>
 
-   <section id="contact" className="content-section contact-section"><div className="section-grid"><div><p className="section-label">CONTACT</p><h2>Let's build something <span>great</span></h2><p className="contact-copy">Have a Python, data science, Flutter, or teaching opportunity? I'd love to hear about it. I'm based in Hyderabad, Sindh.</p><div className="contact-links"><a href="mailto:ahmeralishoukat.work@gmail.com"><Mail/>ahmeralishoukat.work@gmail.com</a><a href="https://github.com/Ahmer109" target="_blank" rel="noreferrer"><Github/>github.com/Ahmer109</a><a href="https://www.linkedin.com/in/a-ahmer/" target="_blank" rel="noreferrer"><Linkedin/>linkedin.com/in/a-ahmer</a></div></div>
+   <section id="contact" className="content-section contact-section"><div className="section-grid"><div><p className="section-label">CONTACT</p><h2>Let's build something <span>great</span></h2><p className="contact-copy">Have a Python, data science, Flutter, or teaching opportunity? I'd love to hear about it. I'm based in Hyderabad, Sindh.</p><div className="contact-links"><a href="mailto:ahmeralishoukat.work@gmail.com"><Mail/>ahmeralishoukat.work@gmail.com</a><a href="tel:+923152661772"><Phone/>+92 315-2661772</a><a href="https://github.com/Ahmer109" target="_blank" rel="noreferrer"><Github/>github.com/Ahmer109</a><a href="https://www.linkedin.com/in/a-ahmer/" target="_blank" rel="noreferrer"><Linkedin/>linkedin.com/in/a-ahmer</a></div></div>
     <form className="contact-form" onSubmit={submit}><label>Name<input required name="name" placeholder="Your name"/></label><label>Email<input required name="email" type="email" placeholder="you@example.com"/></label><label>Message<textarea required name="message" rows={4} placeholder="Tell me about your project"/></label><Button type="submit" size="lg">Send message <ArrowUpRight/></Button>{sent&&<p className="sent"><CheckCircle2/> Thanks — your message is ready to send.</p>}</form>
    </div></section>
   </main><footer><div className="wide-wrap"><a href="#home" className="wordmark"><Mark small/><span>Ahmer<span>.dev</span></span></a><p>Designed & built with care.</p><p>© 2026 Ahmer Ali</p></div></footer>
