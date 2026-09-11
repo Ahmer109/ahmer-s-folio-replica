@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ahmer Ali | Flutter Full-Stack Developer" },
-      { name: "description", content: "Ahmer Ali builds polished Flutter apps and full-stack products." },
+      { title: "Ahmer Ali | Python & Flutter Developer" },
+      { name: "description", content: "Ahmer Ali builds Python, data science, Streamlit, and Flutter projects." },
       { name: "author", content: "Ahmer Ali" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
